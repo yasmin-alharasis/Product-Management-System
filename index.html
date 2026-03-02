@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System | Inventory & Stock Control Software</title>
+    <meta name="description" content="Powerful Product Management System to manage inventory, track stock, monitor sales, and organize products efficiently. Easy to use, secure, and scalable solution for businesses.">
+    <meta name="keywords" content="Product Management System, Inventory Management, Stock Control, Product Tracking, Sales Management, Business Software, Warehouse Management">
+    <meta name="author" content="yasmin alharasis">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <script src="./js/main.js" defer></script>
+    <div class="container">
+        <div class="header">
+            <h2>Cruds Js</h2>
+            <p class="header-description">product management system</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title" name="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" placeholder="price" id="price" name="price">
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes" name="taxes">
+                <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads" name="ads">
+                <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount" name="discount">
+                <small onkeyup="getTotal()" id="total"></small>
+            </div>
+            <input type="number" placeholder="count" id="count" name="count">
+            <input type="text" placeholder="category" id="category" name="category">
+            <button type="submit" id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" placeholder="search" id="search" name="search" onkeyup="searchData(this.value)">
+                <div class="btnSearch">
+                    <button onclick="getSearchMood(this.id)" id="title">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="category">Search By Category</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+.header {
+    text-align: center;
+    margin-top: 8vh;
+    line-height: 2rem;
+}
+.header p {
+    color: grey;
+    text-transform: capitalize;
+}
+.container{
+    width: 80%;
+    margin:  0 auto;
+}
+input ,button {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    margin: 4px 0;
+    padding: 4px;
+}
+
+input {
+    outline: none;
+    background-color: #f4f1f1;
+}
+input:focus {
+    background-color: #dadada;
+    transform: scale(1.1);
+}
+button {
+    background-color: rgba(35, 35, 218, 0.826);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: blue;
+    letter-spacing: 1px;
+}
+.price input {
+    width: 20%;
+}
+#total {
+    content: "Total: ";
+    background-color: rgb(219, 5, 5);
+    padding: 4px 2px;
+    border-radius: 4px;
+}
+#total::before {
+    content: "Total: ";
+}
+#deleteAll button{
+    background-color: rgb(219, 5, 5);
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button {
+    width: 45%;
+}
+.table-container{
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+  min-width: 800px; 
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+td, th {
+    border-bottom: 1px solid #ccc; /* خط أفقي فقط */
+    padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+table button {
+    background-color: white; 
+    color: black;
+    font-size: 16px;
+    margin: 4px 2px;
+
+}
+#update {
+    border: 2px solid #dbca4f;
+    color: #dbca4f;
+}
+#delete {
+    border: 2px solid rgb(219, 5, 5);
+    color: rgb(219, 5, 5);
+}
