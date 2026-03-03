@@ -4,7 +4,7 @@ A simple and responsive Product Management System built using **HTML, CSS, and V
 This project demonstrates full CRUD operations with localStorage support and dynamic calculations.
 
 <p align="center">
-<a href="https://Product-Management-System.app/">View Demo</a>
+<a href="https://crudjs-product-management-system.netlify.app/">View Demo</a>
 </p>
 ---
 
